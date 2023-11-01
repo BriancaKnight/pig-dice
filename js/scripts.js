@@ -5,13 +5,22 @@ function PigDice(score1, score2, rollScore) {
 }
 
 PigDice.prototype.rollDice = function () {
-  this.rollScore = Math.floor(Math.random() * 6) + 1;
-  return this.rollScore;
+    let currentRoll = Math.floor(Math.random() * 6) + 1;
+    if (currentRoll != 1) {
+        this.rollScore += currentRoll;
+    }
+    return currentRoll;
 }
 
 PigDice.prototype.currentScore = function () {
   return "Player 1 = " + this.score1 + " Player 2 = " + this.score2
 };
 
+
+
+
 // ----Test Key----
 
+// let newGame = new PigDice(0, 0, 0);
+// console.log("Current rollScore: " + newGame.rollDice());
+// console.log(newGame)

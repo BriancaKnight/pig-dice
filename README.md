@@ -14,12 +14,12 @@ Code: PigDice.currentScore();
 Expected Output: "Player 1 = 20  Player 2 = 40"
 
 Test: It should randomize dice roll between 1 through 6.
-Code: PigDice.currentScore();
+Code: PigDice.rollDice();
 Expected Output: (2)
 
-Test:
-Code:
-Expected Output:
+Test: It should add parameters so that as long as roll is not a "1" it will continue to add to rollScore.
+Code: PigDice.rollDice();
+Expected Output: rollScore += currentRoll
 
 Test:
 Code:
