@@ -30,13 +30,15 @@ PigDice.prototype.switchPlayer = function () {
 
 PigDice.prototype.hold = function () {
   if (this.currentPlayer === 1) {
-    this.player1 += this.rollScore
+    this.player1 += this.rollScore;
+    this.rollScore = 0;
    } else if (this.currentPlayer === 2) {
-    this.player2 += this.rollScore
+    this.player2 += this.rollScore;
+    this.rollScore = 0;
    }
     return this.switchPlayer();
 }
-
+let newGame = new PigDice(0, 0, 0);
 // ----Test Key----
 
 // let newGame = new PigDice(0, 0, 0);

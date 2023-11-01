@@ -32,9 +32,9 @@ Test: It should add the roll score to individual player scores.
 Code: PigGame.hold();
 Expected Output: player1 + rollScore
 
-Test:
-Code:
-Expected Output:
+Test: It should return rollScore to 0 after switching players.
+Code: PigGame.rollScore();
+Expected Output: 0
 
 Test:
 Code:
