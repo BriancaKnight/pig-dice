@@ -1,13 +1,8 @@
 Describe PigDice
 
 Test: It should make a constructor for PigDice.
-Code: function PigDice(score1, score2) {
-              this.score1 = score1;
-              this.score2 = score2;
-              }
-      let pigDice = new PigDice("20", "40")
-Expected Output: pigDice;
-                Pig Dice {"20", "40"};
+Code: function PigDice(player1, player2, rollScore, currentPlayer)
+Expected Output: "player1", "player2", "rollscore", "currentPlayer"
 
 Test: It should create a prototype to display calculated score. 
 Code: PigDice.currentScore();
@@ -25,9 +20,9 @@ Test: It should reset rollScore to 0 if currentRoll = 1
 Code: PigDice.rollDice();
 Expected Output: rollScore = 0
 
-Test:
-Code:
-Expected Output:
+Test: It should create a function to switch user players.
+Code: PigDice.switchPlayer()
+Expected Output: 2
 
 Test:
 Code:

@@ -1,7 +1,8 @@
-function PigDice(score1, score2, rollScore) {
-  this.score1 = score1;
-  this.score2 = score2;
+function PigDice(player1, player2, rollScore, currentPlayer) {
+  this.player1 = player1;
+  this.player2 = player2;
   this.rollScore = rollScore;
+  this.currentPlayer = 1;
 }
 
 PigDice.prototype.rollDice = function () {
@@ -10,15 +11,22 @@ PigDice.prototype.rollDice = function () {
         this.rollScore += currentRoll;
     } else {
         this.rollScore = 0;
+        this.switchPlayer();
     }
     return currentRoll;
-}
-
-PigDice.prototype.currentScore = function () {
-  return "Player 1 = " + this.score1 + " Player 2 = " + this.score2
 };
 
+PigDice.prototype.currentScore = function () {
+  return "Player 1 = " + this.player1 + " Player 2 = " + this.player2;
+};
 
+PigDice.prototype.switchPlayer = function () {
+    if (this.currentPlayer === 1) {
+        return this.currentPlayer += 1;
+    } else {
+        return this.currentPlayer -= 1;
+    }
+}
 
 
 // ----Test Key----
