@@ -24,7 +24,9 @@ Test: It should create a function to switch user players.
 Code: PigDice.switchPlayer()
 Expected Output: 2
 
-Test:
-Code:
-Expected Output:
+Test: It should create a hold function.
+Code: PigGame.hold();
+Expected Output: 2
+
+
 

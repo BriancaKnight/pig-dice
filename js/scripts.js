@@ -1,4 +1,4 @@
-function PigDice(player1, player2, rollScore, currentPlayer) {
+function PigDice(player1, player2, rollScore) {
   this.player1 = player1;
   this.player2 = player2;
   this.rollScore = rollScore;
@@ -26,6 +26,10 @@ PigDice.prototype.switchPlayer = function () {
     } else {
         return this.currentPlayer -= 1;
     }
+}
+
+PigDice.prototype.hold = function () {
+  return this.switchPlayer();
 }
 
 
