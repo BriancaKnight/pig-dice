@@ -29,9 +29,13 @@ PigDice.prototype.switchPlayer = function () {
 }
 
 PigDice.prototype.hold = function () {
-  return this.switchPlayer();
+  if (this.currentPlayer === 1) {
+    this.player1 += this.rollScore
+   } else if (this.currentPlayer === 2) {
+    this.player2 += this.rollScore
+   }
+    return this.switchPlayer();
 }
-
 
 // ----Test Key----
 

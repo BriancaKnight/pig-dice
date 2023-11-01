@@ -28,5 +28,30 @@ Test: It should create a hold function.
 Code: PigGame.hold();
 Expected Output: 2
 
+Test: It should add the roll score to individual player scores.
+Code: PigGame.hold();
+Expected Output: player1 + rollScore
 
+Test:
+Code:
+Expected Output:
 
+Test:
+Code:
+Expected Output:
+
+Test:
+Code:
+Expected Output:
+
+Test:
+Code:
+Expected Output:
+
+Test:
+Code:
+Expected Output:
+
+Test:
+Code:
+Expected Output:
