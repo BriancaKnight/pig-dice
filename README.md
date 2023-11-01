@@ -36,9 +36,9 @@ Test: It should return rollScore to 0 after switching players.
 Code: PigGame.rollScore();
 Expected Output: 0
 
-Test:
-Code:
-Expected Output:
+Test: It should set winning parameters.
+Code: PigGame.rollScore(100);
+Expected Output: "Player 1 wins!"
 
 Test:
 Code:
