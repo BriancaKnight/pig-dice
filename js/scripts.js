@@ -8,6 +8,8 @@ PigDice.prototype.rollDice = function () {
     let currentRoll = Math.floor(Math.random() * 6) + 1;
     if (currentRoll != 1) {
         this.rollScore += currentRoll;
+    } else {
+        this.rollScore = 0;
     }
     return currentRoll;
 }

@@ -21,9 +21,9 @@ Test: It should add parameters so that as long as roll is not a "1" it will cont
 Code: PigDice.rollDice();
 Expected Output: rollScore += currentRoll
 
-Test:
-Code:
-Expected Output:
+Test: It should reset rollScore to 0 if currentRoll = 1
+Code: PigDice.rollDice();
+Expected Output: rollScore = 0
 
 Test:
 Code:
