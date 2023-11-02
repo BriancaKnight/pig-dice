@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="js/scripts.js"></script>
-  <title>Pig Dice</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/scripts.js"></script>
+    <title>Pig Dice</title>
 </head>
+
 <body>
     <h1>Pig Dice</h1>
     <button type="button" id="roll">Roll</button>
     <button type="button" id="hold">Hold</button>
-    
+    <button type="submit" class="hidden" onClick="refreshPage();" id="new-game">New Game</button>
     <div id="roll-results">
-        <h2>You rolled a <span id="new-roll"></span></h2>
-        <p>Current Player: <span id="current-player"></span></p>
+        <h2>You rolled a <span id="new-roll">0</span></h2>
+        <p>Current Player: <span id="current-player">0</span></p>
         <p id="player-switch"></p>
-        <p>Roll Counter:<span id="counter"></span></p>
+        <p>Roll Counter: <span id="counter">0</span></p>
     </div>
     <hr>
     <div id="score-board">
         <h2>Player 1 Score:</h2>
-        <h4 id="player1"></h4>
+        <h4 id="player1">0</h4>
         <h2>Player 2 Score:</h2>
-        <h4 id="player2"></h4>
+        <h4 id="player2">0</h4>
     </div>
+    <button type="button" id="players">2 Players</button>
+    <button type="button" id="computer">Computer</button>
 </body>
+
 </html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/scripts.js"></script>
+  <title>Splash Page</title>
+</head>
+<body>
+  <button type="button" id="players" onClick="players(); window.location.href='index.html'">2 Players</button>
+  <button type="button" id="computer" onClick="aiPlayer(); window.location.href='index.html'">Computer</button>
+</body>
+</html> -->
